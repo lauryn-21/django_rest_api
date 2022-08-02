@@ -18,7 +18,7 @@ from django.urls import path,include
 
 
 urlpatterns = [ # for tasks
-    path('tasks/', include('tasks.urls')),
+    path('', include('tasks.urls')),
     # for admin side
     path('admin/', admin.site.urls),
    

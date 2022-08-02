@@ -1,4 +1,5 @@
-from django.db import models
+from django.db import models 
+# from tasks.models import Task
 
 # Create your models here.
 class Task(models.Model):
@@ -12,3 +13,7 @@ class Task(models.Model):
     def __str__(self):
         #return the task title
         return self.title
+    
+    # t = Task(title="Coding in Python",description="Building a REST API using django")
+    # t.save()
+    # Task.objects.all()
